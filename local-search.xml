@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>test2</title>
+    <link href="/2021/09/19/test2/"/>
+    <url>/2021/09/19/test2/</url>
+    
+    <content type="html"><![CDATA[<p>hello world</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>uniapp</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>uiapp</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>test1</title>
     <link href="/2021/09/15/test1/"/>
     <url>/2021/09/15/test1/</url>
