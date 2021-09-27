@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>vue数据代理</title>
+    <link href="/2021/09/27/vue%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86/"/>
+    <url>/2021/09/27/vue%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<ul><li><p>简单数据代理(通过Object.defineProperty()实现)</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> obj1 = &#123;<span class="hljs-attr">x</span>: <span class="hljs-number">8</span>&#125;<br><span class="hljs-keyword">var</span> obj2 = &#123;&#125;<br><span class="hljs-comment">// Object.defineProperty(操作对象，属性，对象)</span><br><span class="hljs-built_in">Object</span>.defineProperty(obj2, <span class="hljs-string">&#x27;x&#x27;</span>, &#123;<br>  <span class="hljs-function"><span class="hljs-title">get</span>(<span class="hljs-params"></span>)</span> &#123;<br>    <span class="hljs-keyword">return</span> obj1.x<br>  &#125;,<br>  <span class="hljs-function"><span class="hljs-title">set</span>(<span class="hljs-params">val</span>)</span> &#123;<br>    obj1.x = val<br>  &#125;<br>&#125;)<br></code></pre></td></tr></table></figure></li><li><p>vue中的数据代理<br>通过vm对象来代理data中的属性的操作</p></li><li><p>vue中数据代理的好处<br>更加方便的操作data中的数据</p></li><li><p>基本原理<br>通过Object.defineProperty() 将data对象的所有属性添加到vm上</p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>vue</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vue数据代理</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vue el的两种写法</title>
     <link href="/2021/09/23/vue%20el%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%86%99%E6%B3%95/"/>
     <url>/2021/09/23/vue%20el%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%86%99%E6%B3%95/</url>
@@ -23,82 +48,6 @@
       <tag>vue el</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>test2</title>
-    <link href="/2021/09/19/test2/"/>
-    <url>/2021/09/19/test2/</url>
-    
-    <content type="html"><![CDATA[<p>hello world</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>uniapp</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>uiapp</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>test1</title>
-    <link href="/2021/09/15/test1/"/>
-    <url>/2021/09/15/test1/</url>
-    
-    <content type="html"><![CDATA[<p>sgdag</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>vue</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>tags</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>test</title>
-    <link href="/2021/09/15/test/"/>
-    <url>/2021/09/15/test/</url>
-    
-    <content type="html"><![CDATA[<p>这是一篇测试文章<br><img src="pic_002.jpg" alt="图片引用"></p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2021/09/15/hello-world/"/>
-    <url>/2021/09/15/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
     
   </entry>
   
