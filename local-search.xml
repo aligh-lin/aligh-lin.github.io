@@ -5,10 +5,10 @@
   
   <entry>
     <title>vue el的两种写法</title>
-    <link href="/2021/09/23/day/"/>
-    <url>/2021/09/23/day/</url>
+    <link href="/2021/09/23/vue%20el%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%86%99%E6%B3%95/"/>
+    <url>/2021/09/23/vue%20el%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%86%99%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<ul><li>el 的两种写法<br>```javascript<br>// 第一种<br>var vm = new Vue({<br>  el: “#root”,<br>  data: {}<br>})</li></ul><p>// 第二种<br>new Vue({<br>    data: {}<br>}).$mount(“#root”) // Vue实例的原型上的方法</p>]]></content>
+    <content type="html"><![CDATA[<ul><li>el 的两种写法<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 第一种</span><br><span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">new</span> Vue(&#123;<br>    <span class="hljs-attr">el</span>: <span class="hljs-string">&quot;#root&quot;</span>,<br>    <span class="hljs-attr">data</span>: &#123;&#125;<br>&#125;)<br><br><span class="hljs-comment">// 第二种</span><br><span class="hljs-keyword">new</span> Vue(&#123;<br>    <span class="hljs-attr">data</span>: &#123;&#125;<br>&#125;).$mount(<span class="hljs-string">&quot;#root&quot;</span>) <span class="hljs-comment">// Vue实例的原型上的方法</span><br></code></pre></td></tr></table></figure></li></ul>]]></content>
     
     
     <categories>
