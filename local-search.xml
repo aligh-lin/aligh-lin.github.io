@@ -4,23 +4,23 @@
   
   
   <entry>
-    <title>day</title>
+    <title>vue el的两种写法</title>
     <link href="/2021/09/23/day/"/>
     <url>/2021/09/23/day/</url>
     
-    <content type="html"><![CDATA[<p>打卡</p>]]></content>
+    <content type="html"><![CDATA[<ul><li>el 的两种写法<br>```javascript<br>// 第一种<br>var vm = new Vue({<br>  el: “#root”,<br>  data: {}<br>})</li></ul><p>// 第二种<br>new Vue({<br>    data: {}<br>}).$mount(“#root”) // Vue实例的原型上的方法</p>]]></content>
     
     
     <categories>
       
-      <category>one</category>
+      <category>vue</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>day</tag>
+      <tag>vue el</tag>
       
     </tags>
     
