@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>test</title>
+    <link href="/2021/10/31/test/"/>
+    <url>/2021/10/31/test/</url>
+    
+    <content type="html"><![CDATA[<h2 id="vue3-0中的数据代理"><a href="#vue3-0中的数据代理" class="headerlink" title="vue3.0中的数据代理"></a>vue3.0中的数据代理</h2><ul><li>使用Proxy(new Proxy())进行数据代理</li><li></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>vue</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>vue el</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vue数据代理</title>
     <link href="/2021/09/27/vue%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86/"/>
     <url>/2021/09/27/vue%E6%95%B0%E6%8D%AE%E4%BB%A3%E7%90%86/</url>
